@@ -30,6 +30,11 @@ simu/legacy/*
 
 # Ignore simu_results/ files from old computations
 simu/simu_results/*.RData
+simu/simu_results/neth_neigh_pc_municip_full_infer_res.rds
+simu/simu_results/neth_neigh_pc_municip_full_infer_res_flsa.rds
+simu/simu_results/utrecht_neigh_pc_district_full_infer_res.rds
+simu/simu_results/utrecht_neigh_pc_district_full_infer_res_flsa.rds
+simu/simu_results/utrecht_neigh_pc_municip_full_infer_res.rds
 
 # Ignore old tables
 simu/table/neth*

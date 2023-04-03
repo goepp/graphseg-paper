@@ -1,0 +1,75 @@
+!/.gitignore	
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+*.swp
+
+# Ignore raw dataset files from years other than 2016
+*_201[2-5].rds
+*_201[7-9].rds
+
+# Ignore old graphical abstract files (which all contain the name "illus_fig")
+*illus_fig*.pdf
+simu/graphical_abstract/graphical_abstract_neth.tex
+simu/graphical_abstract/graphical_abstract_old.R
+simu/graphical_abstract/graphical_abstract_utrecht.tex
+simu/graphical_abstract/graphical_abstract_utrecht_neigh.R
+
+# Ignore additional simulations
+simu/figure/utrecht_neigh_smooth/*
+simu/infer_utrecht_neigh_smooth.R
+simu/infer_neth_neigh_pc_district.R
+
+# Ignore files relative to cluster computation
+simu/simu_results/cluster/*
+
+# Ignore legacy files and test files
+simu/nf_tutorial/*
+simu/legacy/*
+
+# Ignore simu_results/ files from old computations
+simu/simu_results/*.RData
+
+# Ignore old tables
+simu/table/neth*
+simu/table/utrecht*
+simu/table/rms_dim_table*
+
+# Ignore temporary files
+simu/temp*.R
+infer_res*.rds
+
+# Ignore old `synthetic/` files
+simu/synthetic/gemeenten-alfabetisch-2016.xls
+simu/synthetic/district.rds
+simu/synthetic/graph_neth_district.rds
+simu/synthetic/graph_neth_region.rds
+simu/synthetic/save_utrecht_neigh.rds
+simu/synthetic/neth_region.rds
+
+# Ignore files concerning current or archived research
+simu/nf_tutorial/*
+simu/rand_fm_index/*
+utils/agraph.R
+simu/df_merge_kable.R
+simu/rand_index.R
+simu/temp_check_functions/*
+simu/computation_time_genlasso.R
+simu/full_infer_any.R
+simu/fetch_save_region_encoding.R
+real_data/legacy_code/*
+real_data/research/*
+
+# Old files in /real_data
+/real_data/*.zip
+/real_data/figure/no_shrink/*
+/real_data/figure/paris/*
+/real_data/figure/old_*/*
+/real_data/cbs_buurt_2016.RData
+/real_data/raw_data/cbs_buurt_2016.geojson.zip
+/real_data/raw_data/mrfterm.txt
+/real_data/raw_data/prev*
+/real_data/neth/*
+/real_data/utrecht_prev/*
+

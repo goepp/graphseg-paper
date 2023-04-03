@@ -1,0 +1,51 @@
+Type: Compendium
+Package: graphseg-paper
+Title: R code to reproduce the simulations of the paper Goepp and van de Kassteele (2021)
+Version: 0.0.1
+Authors@R: 
+    person(given = "Vivien",
+           family = "Goepp",
+           role = c("aut", "cre"),
+           email = "vivien.goepp@gmail.com",
+           comment = c(ORCID = "0000-0001-6961-4260"))
+Description: Notebook of the paper Goepp and van de Kassteele (2021)
+License: MIT + file LICENSE
+Depends: 
+    car,
+    dplyr,
+    flsa,
+    fossil,
+    gdata,
+    ggplot2,
+    glasso,
+    glmnet,
+    graphseg,
+    huge,
+    igraph,
+    kableExtra,
+    latex2exp,
+    lattice,
+    limSolve,
+    magrittr,
+    Matrix,
+    mgcv,
+    microbenchmark,
+    parallel,
+    pryr,
+    purrr,
+    RANN,
+    RColorBrewer,
+    reshape2,
+    rgdal,
+    rgeos,
+    scales,
+    sf,
+    stats,
+    stringi,
+    tidyverse,
+    xlsx,
+    xtable
+Remotes: 
+    goepp/graphseg
+Encoding: UTF-8
+LazyData: true

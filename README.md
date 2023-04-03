@@ -10,7 +10,10 @@ Below is a visual illustration of the method, producing a clustering of a spatia
 
 *Keywords: Graph signal processing, Areal lattice data, Spatial clustering, Hot spot detection, Graph-fused lasso, Adaptive Ridge*
 
-## Organisation of the files
+## Using this repository
+
+
+## Organisation of this repository
 
 - `simu/` contains all simulations done in the paper:
 	- `graphical_abstract/` is used to generate the illustrative example displayed in the graphical abstract
@@ -22,7 +25,7 @@ Below is a visual illustration of the method, producing a clustering of a spatia
 	- **Runtime experiments**: `computing_time.R` runs simulations comparing the computing time of the `graphseg::agraph` method with `flsa` (see the paper). `extract_subgraph.R` creates the subgraphs of different size to run the runtime experiments.
 	- **Additional runtime experiments** (not shown in the paper): `computation_time_wrt_q.R` runs runtime simulations showing that the number of zones does not impact the runtime (see paper). `extract_subgraph_wrt_q.R` extracts the subgraphs needed for this simulation.
 
-	- **Download and formatting** the geographical areal data: `fetch_save_data.R` downloads the data areal data and `format_dataset.R` converts them to `sf` format and saves them under `simu/synthetic/`.
+	- **Download and formatting** the geographical areal data: `fetch_save_data.R` downloads the areal data (into `cbs*/`) and `format_dataset.R` converts them to `sf` format and saves them under `simu/synthetic/`.
 	- `df_rms_dim_clust_score_table.R` formats the simulation results into latex tables.
 
 	- **Running simulations**: `infer_<region>_<area>_pc_<zone>.R` (for instance `infer_utrecht neigh_pc_municip.R`) are the script running the simulations on the 6 simulation settings. `infer_any.R` runs simulations on all 6 settings.
@@ -52,6 +55,6 @@ Below is a visual illustration of the method, producing a clustering of a spatia
 
 
 ## References
-- Hoefling, H. (2010). A Path Algorithm for the Fused Lasso Signal Approximator. Journal of Computational and Graphical Statistics, 19(4), 984–1006. [access](http://www.jstor.org/stable/25765384)
-- Goepp and van de Kassteele (2021). Graph-Based Spatial Segmentation of Health-Related Areal Data, *to be published* [arxiv](https://doi.org/10.48550/arXiv.2206.06752)
+- Hoefling, H. (2010). A Path Algorithm for the Fused Lasso Signal Approximator. Journal of Computational and Graphical Statistics, 19(4), 984–1006. [link](http://www.jstor.org/stable/25765384)
+- Goepp and van de Kassteele (2021). Graph-Based Spatial Segmentation of Health-Related Areal Data, *to be published* [link](https://doi.org/10.48550/arXiv.2206.06752)
 

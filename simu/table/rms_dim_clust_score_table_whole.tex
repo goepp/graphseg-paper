@@ -1,0 +1,87 @@
+\begingroup\fontsize{6}{8}\selectfont
+ \setlength\LTleft{-1.6cm}
+
+\begin{longtable}[t]{lllrllrll}
+\caption{\label{tab:rms_dim_clust_score_table_whole}Same table as Table 2 for varying values of $\sigma$. Model dimension, RMSE, and adjusted Rand index (higher is better) of the adaptive ridge and the lfsa, using the AIC. The reported values are the means over 100 repetitions, $\pm$ the standard error.}\\
+\toprule
+\multicolumn{1}{c}{ } & \multicolumn{3}{c}{\makecell[c]{Model \\ dimension}} & \multicolumn{3}{c}{RMSE} & \multicolumn{2}{c}{\makecell[c]{Adjusted Rand \\ index}} \\
+\cmidrule(l{3pt}r{3pt}){2-4} \cmidrule(l{3pt}r{3pt}){5-7} \cmidrule(l{3pt}r{3pt}){8-9}
+\makecell[c]{Dataset \\ (p)} & \makecell[c]{Adaptive \\ Ridge} & FLSA & \makecell[c]{True \\ model \\ dim (q)} & \makecell[c]{Adaptive \\ Ridge} & FLSA & \makecell[c]{No \\ Regula- \\ rization} & \makecell[c]{Adaptive \\ Ridge} & FLSA\\
+\midrule
+\endfirsthead
+\caption[]{Same table as Table 2 for varying values of $\sigma$. Model dimension, RMSE, and adjusted Rand index (higher is better) of the adaptive ridge and the lfsa, using the AIC. The reported values are the means over 100 repetitions, $\pm$ the standard error. \textit{(continued)}}\\
+\toprule
+\multicolumn{1}{c}{ } & \multicolumn{3}{c}{\makecell[c]{Model \\ dimension}} & \multicolumn{3}{c}{RMSE} & \multicolumn{2}{c}{\makecell[c]{Adjusted Rand \\ index}} \\
+\cmidrule(l{3pt}r{3pt}){2-4} \cmidrule(l{3pt}r{3pt}){5-7} \cmidrule(l{3pt}r{3pt}){8-9}
+\makecell[c]{Dataset \\ (p)} & \makecell[c]{Adaptive \\ Ridge} & FLSA & \makecell[c]{True \\ model \\ dim (q)} & \makecell[c]{Adaptive \\ Ridge} & FLSA & \makecell[c]{No \\ Regula- \\ rization} & \makecell[c]{Adaptive \\ Ridge} & FLSA\\
+\midrule
+\endhead
+
+\endfoot
+\bottomrule
+\endlastfoot
+\addlinespace[0.3em]
+\multicolumn{9}{l}{\textbf{$\sigma = 0.1$}}\\
+\hline
+\hspace{1em}\cellcolor{gray!6}{\makecell[r]{Dataset 1\\(390)}} & \cellcolor{gray!6}{\boldmath{$ 11.7 \pm 0.029 $}} & \cellcolor{gray!6}{$ 50.1 \pm 3.4 $} & \cellcolor{gray!6}{12} & \cellcolor{gray!6}{\boldmath{$ 0.0331 \pm 0.0054 $}} & \cellcolor{gray!6}{$ 0.126 \pm 0.032 $} & \cellcolor{gray!6}{0.037} & \cellcolor{gray!6}{\boldmath{$ 0.916 \pm 0.00014 $}} & \cellcolor{gray!6}{$ 0.718 \pm 0.037 $}\\
+\hspace{1em}\makecell[r]{Dataset 2\\(650)} & \boldmath{$ 59.9 \pm 1.9 $} & $ 158 \pm 6.1 $ & 99 & \boldmath{$ 0.197 \pm 0.016 $} & $ 0.234 \pm 0.027 $ & 0.046 & $ 0.817 \pm 0.0094 $ & \boldmath{$ 0.821 \pm 0.047 $}\\
+\hspace{1em}\cellcolor{gray!6}{\makecell[r]{Dataset 3\\(2955)}} & \cellcolor{gray!6}{\boldmath{$ 7.1 \pm 0.25 $}} & \cellcolor{gray!6}{$ 82.5 \pm 5.3 $} & \cellcolor{gray!6}{6} & \cellcolor{gray!6}{\boldmath{$ 0.0087 \pm 0.0031 $}} & \cellcolor{gray!6}{$ 0.0765 \pm 0.019 $} & \cellcolor{gray!6}{0.100} & \cellcolor{gray!6}{\boldmath{$ 0.999 \pm 0.00027 $}} & \cellcolor{gray!6}{$ 0.63 \pm 0.012 $}\\
+\hspace{1em}\makecell[r]{Dataset 4\\(2955)} & \boldmath{$ 80.8 \pm 0.19 $} & $ 308 \pm 9.3 $ & 99 & \boldmath{$ 0.0383 \pm 0.0038 $} & $ 0.151 \pm 0.016 $ & 0.100 & \boldmath{$ 0.866 \pm 0 $} & $ 0.785 \pm 0.037 $\\
+\hspace{1em}\cellcolor{gray!6}{\makecell[r]{Dataset 5\\(2955)}} & \cellcolor{gray!6}{\boldmath{$ 421 \pm 12 $}} & \cellcolor{gray!6}{$ 1110 \pm 21 $} & \cellcolor{gray!6}{650} & \cellcolor{gray!6}{\boldmath{$ 0.199 \pm 0.019 $}} & \cellcolor{gray!6}{$ 0.236 \pm 0.00043 $} & \cellcolor{gray!6}{0.100} & \cellcolor{gray!6}{\boldmath{$ 0.79 \pm 0.036 $}} & \cellcolor{gray!6}{$ 0.778 \pm 0.0043 $}\\
+\hspace{1em}\makecell[r]{Dataset 6\\(12920)} & $ 1820 \pm 54 $ & \boldmath{$ 1360 \pm 18 $} & 3068 & $ 0.245 \pm 0.018 $ & \boldmath{$ 0.15 \pm 0.00078 $} & 0.210 & $ 0.679 \pm 0.0037 $ & \boldmath{$ 0.792 \pm 0.012 $}\\
+\addlinespace[0.3em]
+\multicolumn{9}{l}{\textbf{$\sigma = 0.3$}}\\
+\hline
+\hspace{1em}\cellcolor{gray!6}{\makecell[r]{Dataset 1\\(390)}} & \cellcolor{gray!6}{\boldmath{$ 12.1 \pm 0.71 $}} & \cellcolor{gray!6}{$ 51.8 \pm 5.4 $} & \cellcolor{gray!6}{12} & \cellcolor{gray!6}{\boldmath{$ 0.111 \pm 0.029 $}} & \cellcolor{gray!6}{$ 0.256 \pm 0.046 $} & \cellcolor{gray!6}{0.120} & \cellcolor{gray!6}{\boldmath{$ 0.899 \pm 0.013 $}} & \cellcolor{gray!6}{$ 0.69 \pm 0.046 $}\\
+\hspace{1em}\makecell[r]{Dataset 2\\(650)} & \boldmath{$ 62.6 \pm 3.4 $} & $ 179 \pm 10 $ & 99 & \boldmath{$ 0.222 \pm 0.023 $} & $ 0.397 \pm 0.034 $ & 0.140 & \boldmath{$ 0.821 \pm 0.015 $} & $ 0.713 \pm 0.089 $\\
+\hspace{1em}\cellcolor{gray!6}{\makecell[r]{Dataset 3\\(2955)}} & \cellcolor{gray!6}{\boldmath{$ 7.41 \pm 0.63 $}} & \cellcolor{gray!6}{$ 76.2 \pm 6 $} & \cellcolor{gray!6}{6} & \cellcolor{gray!6}{\boldmath{$ 0.0413 \pm 0.007 $}} & \cellcolor{gray!6}{$ 0.162 \pm 0.016 $} & \cellcolor{gray!6}{0.300} & \cellcolor{gray!6}{\boldmath{$ 0.996 \pm 0.0011 $}} & \cellcolor{gray!6}{$ 0.626 \pm 0.041 $}\\
+\hspace{1em}\makecell[r]{Dataset 4\\(2955)} & \boldmath{$ 85.8 \pm 3.7 $} & $ 329 \pm 17 $ & 99 & \boldmath{$ 0.0973 \pm 0.011 $} & $ 0.273 \pm 0.015 $ & 0.300 & \boldmath{$ 0.862 \pm 0.0052 $} & $ 0.699 \pm 0.091 $\\
+\hspace{1em}\cellcolor{gray!6}{\makecell[r]{Dataset 5\\(2955)}} & \cellcolor{gray!6}{\boldmath{$ 441 \pm 36 $}} & \cellcolor{gray!6}{$ 1230 \pm 100 $} & \cellcolor{gray!6}{650} & \cellcolor{gray!6}{\boldmath{$ 0.251 \pm 0.029 $}} & \cellcolor{gray!6}{$ 0.44 \pm 0.053 $} & \cellcolor{gray!6}{0.300} & \cellcolor{gray!6}{\boldmath{$ 0.753 \pm 0.045 $}} & \cellcolor{gray!6}{$ 0.68 \pm 0.018 $}\\
+\hspace{1em}\makecell[r]{Dataset 6\\(12920)} & $ 1860 \pm 50 $ & \boldmath{$ 1510 \pm 22 $} & 3068 & \boldmath{$ 0.285 \pm 0.0099 $} & $ 0.293 \pm 0.0027 $ & 0.630 & $ 0.668 \pm 0.016 $ & \boldmath{$ 0.745 \pm 0.033 $}\\
+\addlinespace[0.3em]
+\multicolumn{9}{l}{\textbf{$\sigma = 0.7$}}\\
+\hline
+\hspace{1em}\cellcolor{gray!6}{\makecell[r]{Dataset 1\\(390)}} & \cellcolor{gray!6}{\boldmath{$ 40.3 \pm 9.1 $}} & \cellcolor{gray!6}{$ 58.4 \pm 10 $} & \cellcolor{gray!6}{12} & \cellcolor{gray!6}{$ 0.446 \pm 0.042 $} & \cellcolor{gray!6}{\boldmath{$ 0.407 \pm 0.038 $}} & \cellcolor{gray!6}{0.260} & \cellcolor{gray!6}{\boldmath{$ 0.657 \pm 0.071 $}} & \cellcolor{gray!6}{$ 0.617 \pm 0.064 $}\\
+\hspace{1em}\makecell[r]{Dataset 2\\(650)} & \boldmath{$ 101 \pm 16 $} & $ 240 \pm 24 $ & 99 & \boldmath{$ 0.492 \pm 0.031 $} & $ 0.591 \pm 0.037 $ & 0.330 & \boldmath{$ 0.722 \pm 0.068 $} & $ 0.477 \pm 0.082 $\\
+\hspace{1em}\cellcolor{gray!6}{\makecell[r]{Dataset 3\\(2955)}} & \cellcolor{gray!6}{$ 274 \pm 17 $} & \cellcolor{gray!6}{\boldmath{$ 110 \pm 17 $}} & \cellcolor{gray!6}{6} & \cellcolor{gray!6}{$ 0.429 \pm 0.017 $} & \cellcolor{gray!6}{\boldmath{$ 0.209 \pm 0.0068 $}} & \cellcolor{gray!6}{0.690} & \cellcolor{gray!6}{\boldmath{$ 0.74 \pm 0.024 $}} & \cellcolor{gray!6}{$ 0.558 \pm 0.063 $}\\
+\hspace{1em}\makecell[r]{Dataset 4\\(2955)} & \boldmath{$ 307 \pm 58 $} & $ 435 \pm 31 $ & 99 & $ 0.432 \pm 0.033 $ & \boldmath{$ 0.393 \pm 0.02 $} & 0.690 & \boldmath{$ 0.72 \pm 0.082 $} & $ 0.524 \pm 0.085 $\\
+\hspace{1em}\cellcolor{gray!6}{\makecell[r]{Dataset 5\\(2955)}} & \cellcolor{gray!6}{\boldmath{$ 525 \pm 49 $}} & \cellcolor{gray!6}{$ 1590 \pm 1.4 $} & \cellcolor{gray!6}{650} & \cellcolor{gray!6}{\boldmath{$ 0.532 \pm 0.019 $}} & \cellcolor{gray!6}{$ 0.607 \pm 0.0049 $} & \cellcolor{gray!6}{0.690} & \cellcolor{gray!6}{\boldmath{$ 0.617 \pm 0.0064 $}} & \cellcolor{gray!6}{$ 0.478 \pm 0.016 $}\\
+\hspace{1em}\makecell[r]{Dataset 6\\(12920)} & $ 2810 \pm 290 $ & \boldmath{$ 1940 \pm 160 $} & 3068 & $ 0.57 \pm 0.012 $ & \boldmath{$ 0.434 \pm 0.016 $} & 1.500 & $ 0.548 \pm 0.014 $ & \boldmath{$ 0.6 \pm 0.057 $}\\
+\addlinespace[0.3em]
+\multicolumn{9}{l}{\textbf{$\sigma = 0.9$}}\\
+\hline
+\hspace{1em}\cellcolor{gray!6}{\makecell[r]{Dataset 1\\(390)}} & \cellcolor{gray!6}{\boldmath{$ 60.3 \pm 11 $}} & \cellcolor{gray!6}{$ 72.3 \pm 15 $} & \cellcolor{gray!6}{12} & \cellcolor{gray!6}{$ 0.648 \pm 0.045 $} & \cellcolor{gray!6}{\boldmath{$ 0.454 \pm 0.039 $}} & \cellcolor{gray!6}{0.330} & \cellcolor{gray!6}{$ 0.515 \pm 0.072 $} & \cellcolor{gray!6}{\boldmath{$ 0.534 \pm 0.071 $}}\\
+\hspace{1em}\makecell[r]{Dataset 2\\(650)} & \boldmath{$ 132 \pm 20 $} & $ 301 \pm 34 $ & 99 & $ 0.701 \pm 0.037 $ & \boldmath{$ 0.671 \pm 0.03 $} & 0.450 & \boldmath{$ 0.599 \pm 0.094 $} & $ 0.332 \pm 0.047 $\\
+\hspace{1em}\cellcolor{gray!6}{\makecell[r]{Dataset 3\\(2955)}} & \cellcolor{gray!6}{$ 402 \pm 78 $} & \cellcolor{gray!6}{\boldmath{$ 163 \pm 34 $}} & \cellcolor{gray!6}{6} & \cellcolor{gray!6}{$ 0.635 \pm 0.031 $} & \cellcolor{gray!6}{\boldmath{$ 0.232 \pm 0.0093 $}} & \cellcolor{gray!6}{0.880} & \cellcolor{gray!6}{\boldmath{$ 0.531 \pm 0.15 $}} & \cellcolor{gray!6}{$ 0.466 \pm 0.055 $}\\
+\hspace{1em}\makecell[r]{Dataset 4\\(2955)} & \boldmath{$ 509 \pm 69 $} & $ 570 \pm 23 $ & 99 & $ 0.665 \pm 0.036 $ & \boldmath{$ 0.441 \pm 0.012 $} & 0.880 & \boldmath{$ 0.49 \pm 0.1 $} & $ 0.399 \pm 0.045 $\\
+\hspace{1em}\cellcolor{gray!6}{\makecell[r]{Dataset 5\\(2955)}} & \cellcolor{gray!6}{\boldmath{$ 687 \pm 2.2 $}} & \cellcolor{gray!6}{$ 1750 \pm 31 $} & \cellcolor{gray!6}{650} & \cellcolor{gray!6}{\boldmath{$ 0.732 \pm 0.0071 $}} & \cellcolor{gray!6}{$ 0.74 \pm 0.01 $} & \cellcolor{gray!6}{0.880} & \cellcolor{gray!6}{\boldmath{$ 0.525 \pm 0.011 $}} & \cellcolor{gray!6}{$ 0.388 \pm 0.027 $}\\
+\hspace{1em}\makecell[r]{Dataset 6\\(12920)} & $ 3410 \pm 470 $ & \boldmath{$ 2550 \pm 430 $} & 3068 & $ 0.76 \pm 0.023 $ & \boldmath{$ 0.482 \pm 0.013 $} & 1.900 & \boldmath{$ 0.467 \pm 0.00091 $} & $ 0.446 \pm 0.08 $\\
+\addlinespace[0.3em]
+\multicolumn{9}{l}{\textbf{$\sigma = 1.1$}}\\
+\hline
+\hspace{1em}\cellcolor{gray!6}{\makecell[r]{Dataset 1\\(390)}} & \cellcolor{gray!6}{\boldmath{$ 79.6 \pm 14 $}} & \cellcolor{gray!6}{$ 118 \pm 35 $} & \cellcolor{gray!6}{12} & \cellcolor{gray!6}{$ 0.867 \pm 0.05 $} & \cellcolor{gray!6}{\boldmath{$ 0.546 \pm 0.061 $}} & \cellcolor{gray!6}{0.400} & \cellcolor{gray!6}{\boldmath{$ 0.416 \pm 0.071 $}} & \cellcolor{gray!6}{$ 0.403 \pm 0.097 $}\\
+\hspace{1em}\makecell[r]{Dataset 2\\(650)} & \boldmath{$ 161 \pm 22 $} & $ 373 \pm 39 $ & 99 & $ 0.91 \pm 0.035 $ & \boldmath{$ 0.798 \pm 0.034 $} & 0.520 & \boldmath{$ 0.466 \pm 0.09 $} & $ 0.243 \pm 0.044 $\\
+\hspace{1em}\cellcolor{gray!6}{\makecell[r]{Dataset 3\\(2955)}} & \cellcolor{gray!6}{$ 584 \pm 36 $} & \cellcolor{gray!6}{\boldmath{$ 401 \pm 170 $}} & \cellcolor{gray!6}{6} & \cellcolor{gray!6}{$ 0.883 \pm 0.037 $} & \cellcolor{gray!6}{\boldmath{$ 0.326 \pm 0.036 $}} & \cellcolor{gray!6}{1.100} & \cellcolor{gray!6}{$ 0.245 \pm 0.022 $} & \cellcolor{gray!6}{\boldmath{$ 0.292 \pm 0.15 $}}\\
+\hspace{1em}\makecell[r]{Dataset 4\\(2955)} & \boldmath{$ 592 \pm 62 $} & $ 899 \pm 130 $ & 99 & $ 0.88 \pm 0.027 $ & \boldmath{$ 0.549 \pm 0.019 $} & 1.100 & \boldmath{$ 0.426 \pm 0.085 $} & $ 0.26 \pm 0.042 $\\
+\hspace{1em}\cellcolor{gray!6}{\makecell[r]{Dataset 5\\(2955)}} & \cellcolor{gray!6}{\boldmath{$ 712 \pm 41 $}} & \cellcolor{gray!6}{$ 2060 \pm 15 $} & \cellcolor{gray!6}{650} & \cellcolor{gray!6}{$ 0.899 \pm 0.0053 $} & \cellcolor{gray!6}{\boldmath{$ 0.877 \pm 0.021 $}} & \cellcolor{gray!6}{1.100} & \cellcolor{gray!6}{\boldmath{$ 0.492 \pm 0.033 $}} & \cellcolor{gray!6}{$ 0.287 \pm 0.0015 $}\\
+\hspace{1em}\makecell[r]{Dataset 6\\(12920)} & \boldmath{$ 3690 \pm 140 $} & $ 4200 \pm 230 $ & 3068 & $ 0.948 \pm 0.0077 $ & \boldmath{$ 0.566 \pm 0.01 $} & 2.300 & \boldmath{$ 0.412 \pm 0.0012 $} & $ 0.21 \pm 0.017 $\\
+\addlinespace[0.3em]
+\multicolumn{9}{l}{\textbf{$\sigma = 2$}}\\
+\hline
+\hspace{1em}\cellcolor{gray!6}{\makecell[r]{Dataset 1\\(390)}} & \cellcolor{gray!6}{\boldmath{$ 131 \pm 14 $}} & \cellcolor{gray!6}{$ 321 \pm 21 $} & \cellcolor{gray!6}{12} & \cellcolor{gray!6}{$ 1.78 \pm 0.085 $} & \cellcolor{gray!6}{\boldmath{$ 1.67 \pm 0.13 $}} & \cellcolor{gray!6}{0.730} & \cellcolor{gray!6}{\boldmath{$ 0.261 \pm 0.043 $}} & \cellcolor{gray!6}{$ 0.0921 \pm 0.019 $}\\
+\hspace{1em}\makecell[r]{Dataset 2\\(650)} & \boldmath{$ 227 \pm 19 $} & $ 559 \pm 22 $ & 99 & $ 1.82 \pm 0.052 $ & \boldmath{$ 1.76 \pm 0.071 $} & 0.930 & \boldmath{$ 0.27 \pm 0.043 $} & $ 0.0906 \pm 0.015 $\\
+\hspace{1em}\cellcolor{gray!6}{\makecell[r]{Dataset 3\\(2955)}} & \cellcolor{gray!6}{\boldmath{$ 973 \pm 73 $}} & \cellcolor{gray!6}{$ 2410 \pm 82 $} & \cellcolor{gray!6}{6} & \cellcolor{gray!6}{$ 1.81 \pm 0.026 $} & \cellcolor{gray!6}{\boldmath{$ 1.67 \pm 0.062 $}} & \cellcolor{gray!6}{2.000} & \cellcolor{gray!6}{\boldmath{$ 0.113 \pm 0.016 $}} & \cellcolor{gray!6}{$ 0.0264 \pm 0.0033 $}\\
+\hspace{1em}\makecell[r]{Dataset 4\\(2955)} & \boldmath{$ 955 \pm 64 $} & $ 2470 \pm 82 $ & 99 & $ 1.81 \pm 0.024 $ & \boldmath{$ 1.71 \pm 0.043 $} & 2.000 & \boldmath{$ 0.189 \pm 0.029 $} & $ 0.0544 \pm 0.0063 $\\
+\hspace{1em}\cellcolor{gray!6}{\makecell[r]{Dataset 5\\(2955)}} & \cellcolor{gray!6}{\boldmath{$ 1160 \pm 10 $}} & \cellcolor{gray!6}{$ 2630 \pm 49 $} & \cellcolor{gray!6}{650} & \cellcolor{gray!6}{$ 1.84 \pm 0.04 $} & \cellcolor{gray!6}{\boldmath{$ 1.8 \pm 0.016 $}} & \cellcolor{gray!6}{2.000} & \cellcolor{gray!6}{\boldmath{$ 0.286 \pm 0.034 $}} & \cellcolor{gray!6}{$ 0.124 \pm 0.015 $}\\
+\hspace{1em}\makecell[r]{Dataset 6\\(12920)} & \boldmath{$ 5350 \pm 400 $} & $ 11000 \pm 320 $ & 3068 & $ 1.87 \pm 0.0063 $ & \boldmath{$ 1.72 \pm 0.046 $} & 4.200 & \boldmath{$ 0.279 \pm 0.0084 $} & $ 0.0106 \pm 0.0023 $\\
+\addlinespace[0.3em]
+\multicolumn{9}{l}{\textbf{$\sigma = 5$}}\\
+\hline
+\hspace{1em}\cellcolor{gray!6}{\makecell[r]{Dataset 1\\(390)}} & \cellcolor{gray!6}{\boldmath{$ 222 \pm 15 $}} & \cellcolor{gray!6}{$ 377 \pm 6.1 $} & \cellcolor{gray!6}{12} & \cellcolor{gray!6}{\boldmath{$ 4.84 \pm 0.19 $}} & \cellcolor{gray!6}{$ 4.87 \pm 0.19 $} & \cellcolor{gray!6}{1.800} & \cellcolor{gray!6}{\boldmath{$ 0.141 \pm 0.02 $}} & \cellcolor{gray!6}{$ 0.0328 \pm 0.0095 $}\\
+\hspace{1em}\makecell[r]{Dataset 2\\(650)} & \boldmath{$ 369 \pm 17 $} & $ 633 \pm 8.3 $ & 99 & \boldmath{$ 4.85 \pm 0.14 $} & $ 4.9 \pm 0.14 $ & 2.400 & \boldmath{$ 0.134 \pm 0.013 $} & $ 0.0305 \pm 0.0095 $\\
+\hspace{1em}\cellcolor{gray!6}{\makecell[r]{Dataset 3\\(2955)}} & \cellcolor{gray!6}{\boldmath{$ 1730 \pm 79 $}} & \cellcolor{gray!6}{$ 2870 \pm 39 $} & \cellcolor{gray!6}{6} & \cellcolor{gray!6}{\boldmath{$ 4.88 \pm 0.044 $}} & \cellcolor{gray!6}{$ 4.91 \pm 0.068 $} & \cellcolor{gray!6}{5.000} & \cellcolor{gray!6}{\boldmath{$ 0.0445 \pm 0.0046 $}} & \cellcolor{gray!6}{$ 0.00855 \pm 0.0021 $}\\
+\hspace{1em}\makecell[r]{Dataset 4\\(2955)} & \boldmath{$ 1660 \pm 51 $} & $ 2890 \pm 17 $ & 99 & \boldmath{$ 4.85 \pm 0.085 $} & $ 4.89 \pm 0.067 $ & 5.000 & \boldmath{$ 0.092 \pm 0.005 $} & $ 0.0169 \pm 0.003 $\\
+\hspace{1em}\cellcolor{gray!6}{\makecell[r]{Dataset 5\\(2955)}} & \cellcolor{gray!6}{\boldmath{$ 1780 \pm 100 $}} & \cellcolor{gray!6}{$ 2910 \pm 0.71 $} & \cellcolor{gray!6}{650} & \cellcolor{gray!6}{\boldmath{$ 4.9 \pm 0.0013 $}} & \cellcolor{gray!6}{$ 4.95 \pm 0.034 $} & \cellcolor{gray!6}{5.000} & \cellcolor{gray!6}{\boldmath{$ 0.183 \pm 0.0053 $}} & \cellcolor{gray!6}{$ 0.0355 \pm 0.0033 $}\\
+\hspace{1em}\makecell[r]{Dataset 6\\(12920)} & \boldmath{$ 7400 \pm 880 $} & $ 12600 \pm 51 $ & 3068 & \boldmath{$ 4.86 \pm 0.025 $} & $ 4.89 \pm 0.039 $ & 10.000 & \boldmath{$ 0.177 \pm 0.014 $} & $ 0.0012 \pm 0.00021 $\\*
+\end{longtable}
+\endgroup{}

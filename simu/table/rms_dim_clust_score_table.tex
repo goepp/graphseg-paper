@@ -1,0 +1,20 @@
+\begin{table}
+
+\caption{\label{tab:rms_dim_clust_score_table}Model dimension (lower is better, in bold), RMSE (lower is better, in bold), and adjusted Rand index (higher is better, in bold) of the adaptive ridge compared to Hoefling's fused lasso signal approximator (lfsa), using the AIC. The reported values are the means over 100 repetitions, $\pm$ the standard error. The noise standard deviation is $\sigma = 0.7$.}
+\centering
+\resizebox{\linewidth}{!}{
+\begin{tabular}[t]{lllrllrll}
+\toprule
+\multicolumn{1}{c}{ } & \multicolumn{3}{c}{\makecell[c]{Model \\ dimension}} & \multicolumn{3}{c}{RMSE} & \multicolumn{2}{c}{\makecell[c]{Adjusted Rand \\ index}} \\
+\cmidrule(l{3pt}r{3pt}){2-4} \cmidrule(l{3pt}r{3pt}){5-7} \cmidrule(l{3pt}r{3pt}){8-9}
+\makecell[c]{Dataset \\ (p)} & \makecell[c]{Adaptive \\ Ridge} & FLSA & \makecell[c]{True \\ model \\ dim (q)} & \makecell[c]{Adaptive \\ Ridge} & FLSA & \makecell[c]{No \\ Regula- \\ rization} & \makecell[c]{Adaptive \\ Ridge} & FLSA\\
+\midrule
+\cellcolor{gray!6}{\makecell[r]{Dataset 1\\(390)}} & \cellcolor{gray!6}{\boldmath{$ 40.3 \pm 9.1 $}} & \cellcolor{gray!6}{$ 58.4 \pm 10 $} & \cellcolor{gray!6}{12} & \cellcolor{gray!6}{$ 0.446 \pm 0.042 $} & \cellcolor{gray!6}{\boldmath{$ 0.407 \pm 0.038 $}} & \cellcolor{gray!6}{0.26} & \cellcolor{gray!6}{\boldmath{$ 0.657 \pm 0.071 $}} & \cellcolor{gray!6}{$ 0.617 \pm 0.064 $}\\
+\makecell[r]{Dataset 2\\(650)} & \boldmath{$ 101 \pm 16 $} & $ 240 \pm 24 $ & 99 & \boldmath{$ 0.492 \pm 0.031 $} & $ 0.591 \pm 0.037 $ & 0.33 & \boldmath{$ 0.722 \pm 0.068 $} & $ 0.477 \pm 0.082 $\\
+\cellcolor{gray!6}{\makecell[r]{Dataset 3\\(2955)}} & \cellcolor{gray!6}{$ 274 \pm 17 $} & \cellcolor{gray!6}{\boldmath{$ 110 \pm 17 $}} & \cellcolor{gray!6}{6} & \cellcolor{gray!6}{$ 0.429 \pm 0.017 $} & \cellcolor{gray!6}{\boldmath{$ 0.209 \pm 0.0068 $}} & \cellcolor{gray!6}{0.69} & \cellcolor{gray!6}{\boldmath{$ 0.74 \pm 0.024 $}} & \cellcolor{gray!6}{$ 0.558 \pm 0.063 $}\\
+\makecell[r]{Dataset 4\\(2955)} & \boldmath{$ 307 \pm 58 $} & $ 435 \pm 31 $ & 99 & $ 0.432 \pm 0.033 $ & \boldmath{$ 0.393 \pm 0.02 $} & 0.69 & \boldmath{$ 0.72 \pm 0.082 $} & $ 0.524 \pm 0.085 $\\
+\cellcolor{gray!6}{\makecell[r]{Dataset 5\\(2955)}} & \cellcolor{gray!6}{\boldmath{$ 525 \pm 49 $}} & \cellcolor{gray!6}{$ 1590 \pm 1.4 $} & \cellcolor{gray!6}{650} & \cellcolor{gray!6}{\boldmath{$ 0.532 \pm 0.019 $}} & \cellcolor{gray!6}{$ 0.607 \pm 0.0049 $} & \cellcolor{gray!6}{0.69} & \cellcolor{gray!6}{\boldmath{$ 0.617 \pm 0.0064 $}} & \cellcolor{gray!6}{$ 0.478 \pm 0.016 $}\\
+\makecell[r]{Dataset 6\\(12920)} & $ 2810 \pm 290 $ & \boldmath{$ 1940 \pm 160 $} & 3068 & $ 0.57 \pm 0.012 $ & \boldmath{$ 0.434 \pm 0.016 $} & 1.50 & $ 0.548 \pm 0.014 $ & \boldmath{$ 0.6 \pm 0.057 $}\\
+\bottomrule
+\end{tabular}}
+\end{table}

@@ -5,12 +5,12 @@ It provides all the code necessary to reproduce the paper's figures, simulation 
 
 This research paper introduces a method for defining clusters on graph-based signals. It is applied in the domain of spatial statistics for detecting clusters in areal data. 
 
+The method developed in the paper is available in the R package [graphseg](github.com/goepp/graphseg).
+
 Below is a visual illustration of the method, producing a clustering of a spatial signal. The areas used are the neighborhoods around the city of Utrecht, NL:
 ![graphical illustration of graphseg::agraph](simu/figure/graphical_abstract/final_figure.png)
 
 *Keywords: Graph signal processing, Areal lattice data, Spatial clustering, Hot spot detection, Graph-fused lasso, Adaptive Ridge*
-
-## Using this repository
 
 
 ## Organisation of this repository
@@ -50,9 +50,30 @@ Below is a visual illustration of the method, producing a clustering of a spatia
 	- `div_pal.R` contains functions for setting color scales in the figures.
 	- `sf2nb.R` contains a utility functions for defining the adjacency graph from the geographical areal data.
 
-## Using the script
+## Installation
 
+The R packages used in this repository are stored in a [renv](https://rstudio.github.io/renv/). It allows to easily load the same package versions. Here are the steps to run the R scripts in this repository:
 
+- clone it: `https://github.com/goepp/graphseg-paper`
+- install renv: `install.packages("renv")`
+- activate the `renv` : `renv::activate()`. At this point, R is using a different .libPath for this project. You can check it by running `.libPaths()`.
+- setup the packages stored in renv: `renv::restore()`
+
+`renv` does not allow complete reproducibility. Some remarks:
+	- I used R version 4.2.1. Make sure you have a version >=4.2.1 and not too far away from it if possible. 
+	- This repo was written using Ubuntu 22.04 LTS. On Linux, you may need to install linux packages in order to install the necessary R packages:
+
+```
+sudo apt install libgeos-dev
+sudo apt install libharfbuzz-dev libfribidi-dev
+sudo apt install libfontconfig1-dev
+sudo apt install libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev
+sudo apt install libudunits2-dev
+sudo apt install libgdal-dev
+sudo apt install cmake
+sudo apt install r-cran-rjava
+sudo apt install default-jdk && sudo R CMD javareconf
+```
 
 ## References
 - Hoefling, H. (2010). A Path Algorithm for the Fused Lasso Signal Approximator. Journal of Computational and Graphical Statistics, 19(4), 984–1006. [link](http://www.jstor.org/stable/25765384)

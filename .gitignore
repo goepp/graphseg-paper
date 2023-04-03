@@ -4,6 +4,7 @@
 .RData
 .Ruserdata
 *.swp
+TODO
 
 # Ignore raw dataset files from years other than 2016
 *_201[2-5].rds

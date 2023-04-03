@@ -203,7 +203,6 @@ system('convert simu/figure/graphical_abstract/graphical_abstract_utrecht_distri
 
 
 #### Concatenate the 4 PNGs into one --------------------------------------
-system("cd simu/figure/graphical_abstract")
 system("convert +append simu/figure/graphical_abstract/graphical_abstract_utrecht_district1.png \\
 simu/figure/graphical_abstract/graphical_abstract_utrecht_district2.png \\
        simu/figure/graphical_abstract/temp1.png")

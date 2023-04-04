@@ -1,13 +1,16 @@
 # graphseg-paper
 
+## Presentation
+
 The goal of this repository is to make available the code used for the paper [Goepp and van de Kassteele (2021)](https://arxiv.org/abs/2206.06752).
 It provides all the code necessary to reproduce the paper's figures, simulation results and real data application results.
 
 This research paper introduces a method for defining clusters on graph-based signals. It is applied in the domain of spatial statistics for detecting clusters in areal data. 
 
-The method developed in the paper is available in the R package [graphseg](github.com/goepp/graphseg).
+The method developed in the paper is available in the R package [graphseg](https://github.com/goepp/graphseg).
 
 Below is a visual illustration of the method, producing a clustering of a spatial signal. The areas used are the neighborhoods around the city of Utrecht, NL:
+
 ![graphical illustration of graphseg::agraph](simu/figure/graphical_abstract/final_figure.png)
 
 *Keywords: Graph signal processing, Areal lattice data, Spatial clustering, Hot spot detection, Graph-fused lasso, Adaptive Ridge*

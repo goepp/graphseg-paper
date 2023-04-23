@@ -55,16 +55,17 @@ Below is a visual illustration of the method, producing a clustering of a spatia
 
 ## Installation
 
-The R packages used in this repository are stored in a [renv](https://rstudio.github.io/renv/). It allows to easily load the same package versions. Here are the steps to run the R scripts in this repository:
+The R packages used in this repository are stored in a [renv](https://rstudio.github.io/renv/). An `renv` allows to run the R code in this repo with the same package versions. Here are the steps for running the code of this repo:
 
-- clone it: `https://github.com/goepp/graphseg-paper`
+- clone it: `git clone https://github.com/goepp/graphseg-paper.git`
 - install renv: `install.packages("renv")`
-- activate the `renv` : `renv::activate()`. At this point, R is using a different .libPath for this project. You can check it by running `.libPaths()`.
+- activate the `renv` : `renv::activate()`. At this point, R is using a different `.libPath` for this project. You can check it by running `.libPaths()`.
 - setup the packages stored in renv: `renv::restore()`
 
 `renv` does not allow complete reproducibility. Some remarks:
-	- I used R version 4.2.1. Make sure you have a version >=4.2.1 and not too far away from it if possible. 
-	- This repo was written using Ubuntu 22.04 LTS. On Linux, you may need to install linux packages in order to install the necessary R packages:
+
+- I used R version 4.2.1. Make sure you have a version >=4.2.1 and not too far away from it if possible. 
+- This repo was written using Ubuntu 22.04 LTS. On Linux, there are some linux packages you may need to install before installing the R packages:
 
 ```
 sudo apt install libgeos-dev
